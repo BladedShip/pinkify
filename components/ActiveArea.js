@@ -42,7 +42,7 @@ function ActiveArea({ session }) {
 
 
   return (
-    <div className="flex-grow">
+    <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide">
       <header className="absolute top-5 right-8">
         <div className="flex items-center bg-black space-x-3 opacity-90 hover:opacity-80 transition-all cursor-pointer rounded-full p-1 pr-2 text-white" onClick={()=>signOut()}>
           <img
@@ -55,7 +55,7 @@ function ActiveArea({ session }) {
         </div>
       </header>
       <section
-        className={`flex items-end space-x-7 bg-gradient-to-b to-black h-80 ${color} text-white p-8`}
+        className={`flex items-end space-x-7 bg-gradient-to-b to-black h-80 ${color} text-white p-8 `}
       >
         <img
             src={playlist?.images[0]?.url}
